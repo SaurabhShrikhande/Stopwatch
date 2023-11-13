@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#main{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(240, 240, 240);
+}
+
+h1{
+    font-size: 150px;
+    color:rgb(255, 0, 119);
+}
+
+button{
+    color: white;
+    background-color: rgb(255, 0, 119);
+    font-size: 70px;
+    width: 250px;
+    border-radius: 40px;
+    margin: 20px;
+    border: 2px solid transparent;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: rgb(225, 35, 124);
+}
+
+button:active{
+    transform: scale(0.9);
+}
+
+button[disabled] {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+
+@media screen and (max-width: 840px) {
+    h1{
+        font-size: 70px;
+        
+    }
+    button{
+        font-size: 35px;
+        width: 120px;
+    }
+} 
